@@ -1,0 +1,39 @@
+{
+  "name": "share-life",
+  "version": "1.0.0",
+  "description": "Aplicación que fomenta la cultura de donación de órganos a través de la tecnología",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XenonDevelops/ShareLifeServer.git"
+  },
+  "keywords": [
+    "hackathon",
+    "muse",
+    "sharle-life"
+  ],
+  "author": "haeej",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XenonDevelops/ShareLifeServer/issues"
+  },
+  "homepage": "https://github.com/XenonDevelops/ShareLifeServer#readme",
+  "devDependencies": {
+    "browserify": "^10.2.6",
+    "debowerify": "^1.3.1",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-streamify": "^1.0.2",
+    "gulp-uglify": "^1.4.2",
+    "gulp-util": "^3.0.6",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.2.3"
+  },
+  "dependencies": {
+    "detective": "^4.3.1"
+  }
+}

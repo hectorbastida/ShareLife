@@ -1,0 +1,120 @@
+    <div class="main">
+        <div class="banner">   
+            <div class="banner__logo">
+                <img src="assets/images/logo/ShareLifeApp.png">
+            </div>
+            <div>
+            <h2 class="banner__subtitle" style="padding-top: 85px;">
+                Share Life es una aplicación creada con la intención de sensibilizar a las personas de dar ese pequeño gran paso (donación de organos). 
+            </h2>
+    </div>
+    
+        <div style="position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;">
+            
+            <a ui-sref="nahh" style="background-color:#2196F3;color:#ffffff;margin-bottom:0;" class="banner__dl-btn btn btn--xl btn--white btn--raised btn--blue" lx-ripple="white" style="position: relative; overflow: hidden;">
+        Iniciate!
+    </a>            
+        </div>
+
+        </div>
+        <!--div class="main-section">
+            <h3 class="main-section__title">Kanban Table</h3>
+            <div class="main-section__content"></div>
+        </div-->
+     <!--div class="floating-button">
+        <button ng-click="opendDialog('signUp')" class="btn btn--xl btn--blue btn--fab" lx-ripple="white"><i class="icon icon--xl icon--circled mdi mdi-plus"></i></button>
+    </div-->
+    </div>
+
+
+
+    
+    <lx-dialog class="dialog dialog--l" id="signIn" auto-close="true" onclose="closingDialog()">
+    <div class="dialog__header ">
+        <div class="toolbar pl++ dialog-home-header">
+            <span class="toolbar__label tc-white fs-title">
+                Sign In
+            </span>
+
+            <div class="toolbar__right">
+                <!--button class="btn btn--l btn--white btn--icon" lx-ripple lx-dialog-close>
+                    <i class="mdi mdi-close"></i>
+                </button-->
+            </div>
+        </div>
+    </div>
+
+    <div class="p++">
+        <p class="p-notice" >Please insert you credentials.</p>
+        <div class="mt++" flex-container="row" flex-gutter="24">
+            <div flex-item>
+            <lx-text-field label="Username" fixed-label="true" icon="account">
+                <input type="text" ng-model="textFields.username">
+            </lx-text-field>
+            <a href="#" style="float:right"  class="link link-info">Dont have an account?</a>
+            </div>
+        </div> 
+        <div class="mt++" flex-container="row" flex-gutter="24">
+            <div flex-item>
+            <lx-text-field label="Password" fixed-label="true" icon="account-key">
+                <input type="password" ng-model="textFields.password">
+            </lx-text-field>
+            <a href="#" style="float:right" class="link link-alert">Forgot your password?</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="dialog__actions">
+        <a class="btn btn--m btn--black btn--flat" lx-ripple lx-dialog-close>Cancel</a>
+        <a href="#" class="btn btn--m btn--black btn--flat" lx-ripple>Sign In</a>
+    </div>
+</lx-dialog>
+
+    <lx-dialog class="dialog dialog--l" id="signUp" auto-close="true" onclose="closingDialog()">
+    <div class="dialog__header ">
+        <div class="toolbar pl++ dialog-home-header">
+            <span class="toolbar__label tc-white fs-title" >
+                Sign Up
+            </span>
+
+            <div class="toolbar__right">
+                <!--button class="btn btn--l btn--white btn--icon" lx-ripple lx-dialog-close>
+                    <i class="mdi mdi-close"></i>
+                </button-->
+            </div>
+        </div>
+    </div>
+
+    <div class="p++">
+        <p class="p-notice" >Please complete all fields.</p>
+        <div class="mt++" flex-container="row" flex-gutter="24">
+            <div flex-item>
+            <lx-text-field label="Username" fixed-label="true" icon="account">
+                <input type="text" ng-model="textFields.username">
+            </lx-text-field>
+            </div>
+        </div> 
+        <div class="mt++" flex-container="row" flex-gutter="24">
+            <div flex-item>
+            <lx-text-field label="Password" fixed-label="true" icon="account-key">
+                <input type="password" ng-model="textFields.password">
+            </lx-text-field>
+            </div>
+        </div>
+        <div class="mt++" flex-container="row" flex-gutter="24">
+            <div flex-item>
+            <lx-text-field label="Repeat Password" fixed-label="true" icon="account-key">
+                <input type="password" ng-model="textFields.passwordRepeat">
+            </lx-text-field>
+            </div>
+        </div>
+    </div>
+
+    <div class="dialog__actions">
+        <a class="btn btn--m btn--black btn--flat" lx-ripple lx-dialog-close>Cancel</a>
+        <a class="btn btn--m btn--black btn--flat" lx-ripple>Sign Up</a>
+    </div>
+</lx-dialog>

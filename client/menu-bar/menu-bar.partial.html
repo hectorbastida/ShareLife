@@ -1,0 +1,54 @@
+<header class="header header-stick" id="progress" headroom>
+    <div class="card card-menu">
+        <div class="menu-bar">
+            <h1 class="main-logo">
+                    <a ui-sref="index" class="main-logo__link" lx-ripple="white" style="position: relative; overflow: hidden;">
+                        <span class="ripple bgc-white" style="height: 93px; width: 93px; top: -36.5px; left: 10.5px;"></span>
+                        <img class="header-img" src="assets/images/logo/logoweb.png">
+                    </a>
+                </h1>
+            <div class="toolbar__left mr++">
+            </div>
+            <span class="toolbar__label fs-title"></span>
+            <div class="toolbar__right" >
+                <div>
+                    <button class="btn btn--l btn--black btn--icon btn-menu" lx-ripple="white">
+                        <i style="color:#ffffff" class="mdi mdi-menu"></i>
+                    </button>
+                    <ul class="inline-menu submenu-ul dropdown-content top-menu">
+                        <li></li>
+                        <li class="notification-row">
+                            <a  href="javascript:void(0);" ui-sref="conocer">
+                                <i class="icon icon--l  icon--circled mdi mdi-home avatar-notification icon-notification top-menu-li"></i>
+                                <span class="top-menu-span">Conoce Más</span>
+                            </a>
+                        </li>
+                        <li class="notification-row">
+                            <a href="javascript:void(0);" ui-sref="historias">
+                                <i class="icon icon--l  icon--circled mdi mdi-logout avatar-notification icon-notification top-menu-li" style="width: 34px!important;"></i>
+                                <span class="top-menu-span">Historias</span>
+                            </a>
+                        </li>
+                      
+                   
+                    </ul>
+                    
+                    
+                    
+                    <nav class="main-nav main-nav--lap-and-up">
+        <ul>
+            <li><a href="javascript:void(0)" ui-sref="conocer" class="main-nav__link" lx-ripple="white" style="position: relative; overflow: hidden;"><span class="ripple bgc-white" style="height: 144px; width: 144px; top: -61px; left: -22.25px;"></span>Conocer más</a></li>
+            <li><a href="javascript:void(0)" ui-sref="historias" class="main-nav__link" lx-ripple="white" style="position: relative; overflow: hidden;"><span class="ripple bgc-white" style="height: 104px; width: 104px; top: -38px; left: 36.9375px;"></span>Historias</a></li>
+        </ul>
+    </nav>
+                    
+                    
+                </div>
+            <a ng-show="userIsLogged()" target="_blank" href="https://signup.wordpress.com/signup/?ref=oauth2&oauth2_redirect=218c45f283df44a4701c7612cb2dd7ab%40https%3A%2F%2Fpublic-api.wordpress.com%2Foauth2%2Fauthorize%2F%3Fclient_id%3D1854%26response_type%3Dcode%26blog_id%3D0%26state%3D105ed3a75bfe1875da6b678974c151d02b78f46a52f1e0ec770ef3719a54a870%26redirect_uri%3Dhttps%253A%252F%252Fen.gravatar.com%252Fconnect%252F%253Faction%253Drequest_access_token%26jetpack-code%26jetpack-user-id%3D0%26action%3Doauth2-login&wpcom_connect=1">
+                <img class="toolbar-avatar" src="https://www.gravatar.com/avatar/{{getGravatar()}}=300"></img>                
+            </a>    
+            </div>
+            
+   <!--div class="toolbar__right" style="position: absolute;right: 0;bottom: 0;top: 0;" ng-hide="userIsLogged()"--> 
+            <div class="toolbar__right" style="position: absolute;right: 0;bottom: 0;top: 0;" > <!--lx-search-filter closed theme="light"></lx-search-filter-->
+                <nav class="main-nav main-nav--lap-and-up" style="float: right;    "
